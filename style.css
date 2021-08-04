@@ -4,43 +4,61 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
+.content {
+    flex: 1 0 auto;
+  }
 nav {
     position: fixed; 
     width: 100%;
     background-color: #FBF9F4;
     z-index: 1;
+    height: 80px;
 }
 nav ul {
     margin: 0;
-    padding: 0;
+    padding: 30px 0px;
     text-align: center;
 }
 nav li{
+    background: r#FBF9F4;
+    border: 1px solid #FBF9F4;
+    border-radius: 3px;
+    color: black;
     letter-spacing: 2px;
-    padding: 10px;
+    margin: 7px;
+    padding: 5px;
+    display: inline-block; 
+}
+nav li:hover {
+    background: #DCE7ED;
+    border: 1px solid #DCE7ED;
+}
+nav a {
+    text-decoration: none;
 }
 .banner {
-    background-image: url("https://drive.google.com/uc?id=19HUk1B2BwNyHJAvnXcRtmehS4e_LeUs8"); 
+    background-image: url("https://drive.google.com/uc?id=1zuuV8Dq_ePwmKqPHVHlTHwx4rSouxcms"); 
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-position: top center;
-    height: 700px;
+    background-position: 50% 85%;
+    height: 600px;
     width: 100%;
     position: relative;
-    top: 100px;
-
-
+    top: 50px;
 }
 .intro {
     color: white;
     border: 3px solid white;
     position: relative;
     top: 400px;
-    width: 600px;
-    margin: 0 auto;
+    left: 10px;
+    width: 550px;
     text-align: center;
 }
 .hi {
@@ -61,12 +79,16 @@ nav li{
     height: 300px;
     display: flex;
     justify-content: center;
-    border: 2px solid #D3A904;
+    border: 2px solid #A5B424;
     margin: 0 auto;
 }
 .about {
     position: relative;
-    top: 80px;
+    top: 30px;
+}
+.about p {
+    padding: 0px 200px 100px 200px;
+    font-size: 20px;
 }
 .work h1 {
     text-align: center;
@@ -76,6 +98,26 @@ nav li{
     position: relative; 
     top: 80px;
 }
+.work p {
+    padding: 30px 200px 50px 200px;
+    font-size: 20px;
+    text-align: center;
+}
+.work a{
+    background: r#FBF9F4;
+    border: 1px solid #FBF9F4;
+    border-radius: 3px;
+    color: black;
+    letter-spacing: 2px;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block; 
+}
+.work a:hover {
+    background: #DCE7ED;
+    border: 1px solid #DCE7ED;
+}
 .contact h1 {
     text-align: center;
     font-size: 50px;
@@ -84,12 +126,27 @@ nav li{
     position: relative; 
     top: 80px;   
 }
+.contact ul {
+    padding: 30px 200px 50px 200px;
+    font-size: 20px;
+    text-align: center;
+    list-style-type: none;
+}
 footer {
-    background-image: url("https://drive.google.com/uc?id=19HUk1B2BwNyHJAvnXcRtmehS4e_LeUs8"); 
-    background-size: cover;
-    background-position: bottom center;
-    height: 100px;
+    background: #DCE7ED;
+    text-align: center;
+    color: black;
+    padding: 10px 0px;
     width: 100%;
     position: relative;
-    top: 80px;;
+    top: 30px;
+    border: 1px solid LightGrey;
+    flex-shrink: 0;
 }
+a {
+    color: #000000;
+  }
+
+<!--
+ 
+  -->
